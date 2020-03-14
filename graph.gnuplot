@@ -1,6 +1,6 @@
 reset
 clear
-set xlabel 'Date' rotate by 90
+set xlabel 'Date'
 set xtics nomirror rotate by -270
 set ylabel 'Nb cas'
 set grid
