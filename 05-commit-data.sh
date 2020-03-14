@@ -8,7 +8,7 @@ git pull --rebase origin master
 git stash apply
 
 git status -s
-git add data
-git commit -m "Deploy via Makefile"
+git add data dst
+git commit -m "Deploy via Makefile" data dst
 git push -f -q https://${GITHUB_TOKEN}@github.com/pli01/extract-data data
 exit 0
