@@ -7,3 +7,5 @@ extract-data:
 	bash 03-extract-from-text.sh
 graph-data:
 	bash 04-graph-data.sh
+commit-data:
+	bash 05-commit-data.sh
