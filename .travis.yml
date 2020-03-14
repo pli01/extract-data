@@ -32,7 +32,7 @@ before_script:
   - docker version
 
 script:
-  - make graph-data commit-data
+  - make all commit-data
 
 after_script:
   - echo "END"
