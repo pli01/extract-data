@@ -3,7 +3,9 @@ git config user.email "pli01@github.com"
 git config user.name "pli01"
 
 git checkout -B data
+git stash
 git pull --rebase origin master
+git stash apply
 
 git status -s
 git add data
