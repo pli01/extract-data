@@ -19,5 +19,5 @@ echo "# convert to $data/data.csv"
 awk '{ print "\""$1"\""","$2 }' < data/data.txt > data/data.csv
 
 echo "# convert to $data/data.json"
-cat $data/data.txt |awk ' { printf("[\"%s\",%d]\n",$1,$2) } ' | sed '$!s/$/,/' |awk 'BEGIN{print "[ [\"index\",0],"} { print } END { print "]" } '  > $data/data.json 
+cat $data/data.txt |awk ' { printf("[\"%s\",%d]\n",$1,$2) } ' | sed '$!s/$/,/' |awk 'BEGIN{print "[ [\"index\",0],"} { print } END { print "]" } '  > $data/data.json
 exit 0
